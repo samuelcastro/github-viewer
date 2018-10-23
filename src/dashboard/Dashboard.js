@@ -2,13 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { setDisplayName, compose } from 'recompose';
-import { applySpec, pathOr } from 'ramda';
+import { applySpec } from 'ramda';
 import styledComponents from 'styled-components';
 import Grid from '@material-ui/core/Grid';
 import { getDashboadResults } from './Dashboard.selector';
 import { IssueType } from './Dashboard.propTypes';
 import { IssueList, Filters, Header } from './components';
 import { Notification } from '../app/components';
+import {parseLocation} from '../shared/Shared.helpers';
 import {
   hasErrorSelector,
   errorMessageSelector,
@@ -23,8 +24,6 @@ const MainContainer = styledComponents(Grid)`
   padding: 80px;
 `;
 
-const subTitleFromLocation = pathOr(null, ['state', 'url']);
-
 // Exporting a non-connected Component
 export const Dashboard = ({
   results,
@@ -32,25 +31,29 @@ export const Dashboard = ({
   hasError,
   errorMessage,
   location
-}) => (
-  <Container>
-    <Header
-      title="GitHub Issue Viewer"
-      subTitle={subTitleFromLocation(location)}
-      isLoading={isLoading}
-    />
-    <MainContainer
-      container
-      direction="column"
-      justify="center"
-      alignItems="center"
-    >
-      <Notification message={errorMessage} open={hasError} />
-      <Filters />
-      <IssueList results={results} />
-    </MainContainer>
-  </Container>
-);
+}) => {
+  const { owner, name } = parseLocation(location);
+  const subTitle = !isLoading ? `${owner}/${name}` : ''
+  return (
+    <Container>
+      <Header
+        title="GitHub Issue Viewer"
+        subTitle={subTitle}
+        isLoading={isLoading}
+      />
+      <MainContainer
+        container
+        direction="column"
+        justify="center"
+        alignItems="center"
+      >
+        <Notification message={errorMessage} open={hasError} />
+        <Filters />
+        <IssueList results={results} isLoading={isLoading} noResultsMessage="Not Resuls Found" />
+      </MainContainer>
+    </Container>
+  )
+};
 
 Dashboard.propTypes = {
   results: PropTypes.arrayOf(IssueType).isRequired,

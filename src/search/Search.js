@@ -42,7 +42,7 @@ export const Search = ({
         onKeyPress={handleEnterSearch(dispatchSearch)}
         isLoading={isLoading}
       />
-      <Notification message={errorMessage} open={hasError} type="danger" />
+      <Notification message={errorMessage} open={hasError} />
     </Grid>
   </Container>
 );

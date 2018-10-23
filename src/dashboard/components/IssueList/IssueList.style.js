@@ -1,3 +1,5 @@
+import { colors } from '../../../app/App.theme';
+
 export const issueListStyle = `
   flex-grow: 1;
   .fade-enter {
@@ -19,4 +21,7 @@ export const issueListStyle = `
   }
 `;
 
-export default issueListStyle;
+export const noResulsStyle = `
+  padding-top: 100px;
+  color: ${colors.primary}
+`

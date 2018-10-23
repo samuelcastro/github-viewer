@@ -38,7 +38,7 @@ export const Header = ({ title, subTitle, isLoading }) => (
       >
         <Title item>{title}</Title>
         <SubTitle item>{subTitle}</SubTitle>
-        {isLoading && <Loading size={30} color={colors.white} />}
+        {isLoading && <Loading size={50} color={colors.white} />}
       </Grid>
     </HeaderWrapper>
   </HeaderContainer>

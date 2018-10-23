@@ -28,7 +28,7 @@ export const IssueList = ({ results, noResultsMessage, isLoading }) => {
         />
       </CSSTransition>
     ),
-    results
+    isLoading ? [] : results
   );
 
   return (

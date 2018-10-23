@@ -14,6 +14,7 @@ Use `yarn start` to start the app and that's it!
 - [Redux Saga](https://redux-saga.js.org/)
 - [Reselect](https://github.com/reduxjs/reselect)
   - [Learn more about Memoization](https://en.wikipedia.org/wiki/Memoization)
+- [Styled Components](https://www.styled-components.com/)
 - [Recompose](https://github.com/acdlite/recompose)
 - [React Hot Loader](http://gaearon.github.io/react-hot-loader/)
   - [Learn more about Hot Module Replacement](https://webpack.js.org/concepts/hot-module-replacement/)

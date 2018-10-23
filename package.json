@@ -3,18 +3,66 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^3.3.0",
+    "@material-ui/icons": "^3.0.1",
+    "axios": "^0.18.0",
+    "connected-react-router": "^4.5.0",
+    "dotenv": "^6.1.0",
+    "git-url-parse": "^10.1.0",
+    "history": "^4.7.2",
+    "immutable": "^3.8.2",
+    "prop-types": "^15.6.2",
+    "qs": "^6.5.2",
+    "ramda": "^0.25.0",
     "react": "^16.5.2",
+    "react-app-rewire-hot-loader": "^1.0.3",
+    "react-app-rewired": "^1.6.2",
     "react-dom": "^16.5.2",
-    "react-scripts": "2.0.4"
+    "react-hot-loader": "^4.3.11",
+    "react-loadable": "^5.5.0",
+    "react-materialize": "^2.4.7",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.4",
+    "react-transition-group": "^2.5.0",
+    "recompose": "^0.30.0",
+    "redux": "^4.0.1",
+    "redux-immutable": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^0.16.2",
+    "reselect": "^4.0.0",
+    "styled-components": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^1.1.2",
+    "lint-staged": "^7.3.0",
+    "prettier": "^1.14.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject",
+    "lint": "./node_modules/.bin/eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier": "./node_modules/.bin/prettier --write '*.js'",
+    "format": "yarn prettier && yarn lint:fix"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn format",
+      "git add"
+    ]
   },
   "browserslist": [
     ">0.2%",

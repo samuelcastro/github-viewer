@@ -8,6 +8,10 @@ Run `yarn` to install all necessary dependencies.
 
 Use `yarn start` to start the app and that's it!
 
+### Demo
+
+- [Live Demo](https://github-viewer-samuel.herokuapp.com/)
+
 ## Stack used
 
 - [Redux](https://redux.js.org/)

@@ -27,13 +27,13 @@
 - So the project needed to be responsive and I noticed that the design was essentially following the Material Design concepts, therefore I decided to use [React Material Design](https://material-ui.com/) which brings a lot of out of the box components which made the responsiviness work quite simple.
 - I've decided to use [Styled Components](https://www.styled-components.com/) which is a really powerful library to manage inline react styles in a really fashion way, 
 - I've also used:
-- - [Immutable.js](https://facebook.github.io/immutable-js/): To create an efficient immutable redux store.
-- - [Reselect](https://github.com/reduxjs/reselect): Reselect helps creating a memoization system, caching functions calls to avoid recomputation.
-- - [Redux Saga](https://redux-saga.js.org/): To help with side effect work like data fetching.
-- - [React-Loading](https://github.com/jamiebuilds/react-loadable): Code-splitting is the process of taking one large bundle containing your entire app, and splitting them up into multiple smaller bundles which contain separate parts of your app, which brings a huge performance improvements long term.
-- - [Ramda](https://ramdajs.com/docs/): As a really helpful functional programming library to help with data transformation.
-- - [React Hot Loader](https://github.com/gaearon/react-hot-loader): A really nice to have library to hot reload components withou reset the react and redux state.
-- - [Recompose](https://github.com/acdlite/recompose): Which is a really helpful lib to compose HOCs.
+  - [Immutable.js](https://facebook.github.io/immutable-js/): To create an efficient immutable redux store.
+  - [Reselect](https://github.com/reduxjs/reselect): Reselect helps creating a memoization system, caching functions calls to avoid recomputation.
+  - [Redux Saga](https://redux-saga.js.org/): To help with side effect work like data fetching.
+  - [React-Loading](https://github.com/jamiebuilds/react-loadable): Code-splitting is the process of taking one large bundle containing your entire app, and splitting them up into multiple smaller bundles which contain separate parts of your app, which brings a huge performance improvements long term.
+  - [Ramda](https://ramdajs.com/docs/): As a really helpful functional programming library to help with data transformation.
+  - [React Hot Loader](https://github.com/gaearon/react-hot-loader): A really nice to have library to hot reload components withou reset the react and redux state.
+  - [Recompose](https://github.com/acdlite/recompose): Which is a really helpful lib to compose HOCs.
 
 > How long did the assignment take (in hours)? Please break down your answer into buckets (e.g. "Learning Framework", "Coding", "Debugging").
 

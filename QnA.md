@@ -4,7 +4,7 @@
 
 > What do you think are the greatest areas of risk in completing the project?
 
-- Definetly time, I'm really busy at work with tight deadlines, my wife is pregnant then she needs more attention and also we have a few doctor appointments so it was quite difficult manage everything.
+- Definetly time, I'm really busy at work with tight deadlines, my wife is pregnant then she needs more attention and also we have a few doctor appointments this week, so it was quite difficult manage everything.
 
 > What changes/additions would you make to the design?
 

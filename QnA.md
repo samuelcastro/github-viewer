@@ -12,7 +12,7 @@
 
 > List a two or three features that you would consider implementing in the future that would add significant value to the project.
 
-- Pagination is a must have feature that I'd add, at this point it would be super simple to include it since the project is already setup for it.
+- Pagination is a must to have feature that I'd add, at this point it would be super simple to include it since the project is already setup for it.
 - As mentioned before a few nice features would be the ability to add/edit/view issues/pull-requests/comments.
 - Add the ability to view more information about issues/PR since the listing view has limited space to allow it.
 - On the technical side I'd use Graphql rather than just REST to feach Github's api.

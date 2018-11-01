@@ -1,7 +1,7 @@
 import { colors, typography } from '../../../app/App.theme';
 
 export const headerStyle = `
-  padding: 30px;
+  padding: 30px 80px;
   color: ${colors.white};
   -webkit-box-shadow: 0 10px 20px -2px grey;
   -moz-box-shadow: 0 10px 20px -2px grey;
@@ -14,6 +14,7 @@ export const subTitleStyle = `
 `;
 
 export const titleStyle = `
+ flex: 1;
  font-weight: 700;
  font-size: 2.3em;
   @media (max-width: 700px) {
@@ -23,6 +24,11 @@ export const titleStyle = `
 
 export const headerContainerStyle = `
   background-color: ${colors.primary};
+`;
+
+export const loadingWrapperStyle = `
+  width: 50px;
+  margin-left: 20px;
 `;
 
 export const loadingStyle = {

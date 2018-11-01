@@ -33,7 +33,7 @@ export const Dashboard = ({
   location
 }) => {
   const { owner, name } = parseLocation(location);
-  const subTitle = !isLoading ? `${owner}/${name}` : ''
+  const subTitle = `${owner}/${name}`;
   return (
     <Container>
       <Header

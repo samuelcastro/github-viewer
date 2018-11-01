@@ -7,7 +7,8 @@ import {
   headerStyle,
   subTitleStyle,
   titleStyle,
-  headerContainerStyle
+  headerContainerStyle,
+  loadingWrapperStyle
 } from './Header.styles';
 import { colors } from '../../../app/App.theme';
 
@@ -27,18 +28,23 @@ const HeaderWrapper = styledComponents.div`
   ${headerStyle}
 `;
 
+const LoadingWrapper = styledComponents.div`
+  ${loadingWrapperStyle}
+`;
+
 export const Header = ({ title, subTitle, isLoading }) => (
   <HeaderContainer>
     <HeaderWrapper>
       <Grid
         container
         direction="row"
-        justify="space-around"
         alignItems="center"
       >
         <Title item>{title}</Title>
         <SubTitle item>{subTitle}</SubTitle>
-        {isLoading && <Loading size={50} color={colors.white} />}
+        <LoadingWrapper>
+          { isLoading && <Loading size={50} color={colors.white} /> }
+        </LoadingWrapper>
       </Grid>
     </HeaderWrapper>
   </HeaderContainer>

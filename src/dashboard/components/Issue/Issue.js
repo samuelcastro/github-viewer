@@ -25,7 +25,7 @@ export const Issue = ({ title, labels, state, body }) => {
     <Grid item xs={12} sm={12} md={6} lg={4}>
       <CardIssue>
         <IssueHeader title={title} state={state} />
-        <IssueContent text={body} />
+        <IssueContent text={body || ''} />
         <CardActions>{labelList}</CardActions>
       </CardIssue>
     </Grid>

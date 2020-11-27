@@ -3,7 +3,7 @@ import { colors, typography } from '../../../app/App.theme';
 export const inputWrapStyle = `
   width: 100%;
   position: relative;
-  background-color: ${colors.white};
+  background-color: transparent;
   margin-bottom: 17px;
 `;
 

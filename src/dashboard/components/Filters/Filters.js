@@ -41,7 +41,7 @@ export const Filters = ({ match: { url }, location }) => {
         direction="row"
         alignContent='center'
         justify="center"
-        alignItems="flex-center"
+        alignItems="center"
       >
         <Filter to={`${url}?state=all`} active={isAllState} label="All" />
 

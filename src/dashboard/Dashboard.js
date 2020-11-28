@@ -21,7 +21,7 @@ const Container = styledComponents.div`
 `;
 
 const MainContainer = styledComponents(Grid)`
-  padding: 5px;
+  padding: 20px;
 `;
 
 // Exporting a non-connected Component

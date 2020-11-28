@@ -35,6 +35,7 @@ export const Header = ({ title, subTitle, isLoading }) => (
         direction="row"
         justify="space-around"
         alignItems="center"
+        alignContent='center'
       >
         <Title item>{title}</Title>
         <SubTitle item>{subTitle}</SubTitle>

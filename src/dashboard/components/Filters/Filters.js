@@ -39,8 +39,9 @@ export const Filters = ({ match: { url }, location }) => {
         container
         spacing={8}
         direction="row"
-        justify="flex-start"
-        alignItems="flex-start"
+        alignContent='center'
+        justify="center"
+        alignItems="flex-center"
       >
         <Filter to={`${url}?state=all`} active={isAllState} label="All" />
 

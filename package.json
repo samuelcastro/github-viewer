@@ -12,7 +12,7 @@
     "history": "^4.7.2",
     "immutable": "^3.8.2",
     "prop-types": "^15.6.2",
-    "qs": "^6.5.2",
+    "qs": "^6.5.3",
     "ramda": "^0.25.0",
     "react": "^16.5.2",
     "react-app-rewire-hot-loader": "^1.0.3",
